@@ -1,6 +1,6 @@
-## oget - fast { property: 'getter' }
+## oget
 
-Requires no external dependencies
+fast { property: 'getter' }
 
 #### Usage
 

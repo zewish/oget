@@ -1,6 +1,6 @@
 {
   "name": "oget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "oget - fast object property getter",
   "main": "oget.umd.js",
   "authors": [
