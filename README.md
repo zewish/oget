@@ -1,5 +1,5 @@
-oget - fast { property: 'getter' }
-------------------------------------
+## oget - fast { property: 'getter' }
+
 Requires no external dependencies
 
 #### Usage
