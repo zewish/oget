@@ -1,0 +1,27 @@
+{
+  "name": "oget",
+  "version": "1.0.0",
+  "description": "oget - fast object property getter",
+  "main": "oget.umd.js",
+  "authors": [
+    "Iskren Slavov <iskren.s@gmail.com>"
+  ],
+  "license": "BSD-2-Clause",
+  "keywords": [
+    "get",
+    "object",
+    "property",
+    "key",
+    "value",
+    "getter",
+    "accessor",
+    "lodash-get",
+    "underscore-get"
+  ],
+  "homepage": "https://github.com/zewish/oget",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
