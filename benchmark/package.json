@@ -12,7 +12,7 @@
   "dependencies": {
     "lodash.get": "^4.3.0",
     "microtime": "^2.1.1",
-    "oget": "^1.0.2"
+    "oget": "^1.0.3"
   }
   , "private": true
 }

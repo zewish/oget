@@ -2,8 +2,13 @@
 
 fast { property: 'getter' }
 
-#### Usage
+#### How fast is it
+Well, I didn't do any extensive testing on all available browser, but since it uses only builtin functions it should be quite fast. According to <strong>[this little benchmark](https://github.com/zewish/oget/tree/master/benchmark)</strong> it is currently faster than lodash.get on the current LTS version of node.js.
 
+#### What this is not
+This will never be some kind of "wannabe" lodash killer library. It's just what you see - a simple object property getter.
+
+#### Usage
 ```javascript
 'use strict';
 
