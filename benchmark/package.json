@@ -1,6 +1,6 @@
 {
   "name": "oget-benchmark",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "lodash.get": "^4.3.0",
     "microtime": "^2.1.1",
-    "oget": "^1.0.3"
+    "oget": "^1.0.5"
   }
   , "private": true
 }
