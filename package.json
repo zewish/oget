@@ -1,8 +1,10 @@
 {
   "name": "oget",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "oget - fast object property getter",
   "main": "oget.js",
+  "module": "src/oget.js",
+  "jsnext:main": "src/oget.js",
   "scripts": {
     "pretest": "./node_modules/.bin/rollup -c -f cjs",
     "test": "./node_modules/.bin/mocha ./test.js",
