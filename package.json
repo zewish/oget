@@ -1,7 +1,7 @@
 {
   "name": "oget",
   "version": "1.0.7",
-  "description": "oget - fast object property getter",
+  "description": "",
   "main": "oget.js",
   "module": "src/oget.js",
   "jsnext:main": "src/oget.js",
@@ -19,14 +19,6 @@
   },
   "author": "Iskren Slavov <iskren.s@gmail.com>",
   "license": "BSD-2-Clause",
-  "description": "",
-  "devDependencies": {
-    "buble": "^0.8.5",
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "rollup": "^0.26.3",
-    "rollup-plugin-buble": "^0.8.0"
-  },
   "keywords": [
     "get",
     "object",
@@ -37,5 +29,12 @@
     "accessor",
     "lodash-get",
     "underscore-get"
-  ]
+  ],
+  "devDependencies": {
+    "buble": "^0.15.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.1",
+    "rollup-plugin-buble": "^0.15.0"
+  }
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-function oget (obj, path, def) {
+var oget = function (obj, path, def) {
     var res = path
     .replace(/\[/g, '.')
     .replace(/\]/g, '')
@@ -13,6 +13,6 @@ function oget (obj, path, def) {
     return (res === undefined)
       ? def
       : res;
-}
+};
 
 module.exports = oget;
