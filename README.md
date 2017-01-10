@@ -41,7 +41,7 @@ $ npm install --save oget
 
 #### Install (Bower)
 ```bash
-$ npm install --save oget
+$ bower install --save oget
 ```
 
 #### Test
