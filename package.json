@@ -1,14 +1,14 @@
 {
   "name": "oget",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "oget.js",
   "module": "src/oget.js",
-  "jsnext:main": "src/oget.js",
+  "jsnext:main": "src/oget.es.js",
   "scripts": {
-    "pretest": "./node_modules/.bin/rollup -c -f cjs",
-    "test": "./node_modules/.bin/mocha ./test.js",
-    "prepublish": "./node_modules/.bin/rollup -c -f cjs && ./node_modules/.bin/rollup -c -o oget.umd.js"
+    "pretest": "rollup -c -f cjs",
+    "test": "mocha ./test.js",
+    "prepublish": "rollup -c -f cjs && rollup -c -o oget.umd.js && rollup -c -f es -o oget.es.js"
   },
   "repository": {
     "type": "git",
@@ -32,9 +32,9 @@
   ],
   "devDependencies": {
     "buble": "^0.15.2",
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "rollup": "^0.41.1",
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "rollup": "^0.45.2",
     "rollup-plugin-buble": "^0.15.0"
   }
 }

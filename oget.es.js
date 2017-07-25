@@ -1,9 +1,3 @@
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.oget = factory());
-}(this, (function () { 'use strict';
-
 var oget = function (obj, path, def) {
     var res = path
     .replace(/\[/g, '.')
@@ -19,6 +13,4 @@ var oget = function (obj, path, def) {
       : res;
 };
 
-return oget;
-
-})));
+export default oget;
