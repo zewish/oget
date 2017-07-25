@@ -1,10 +1,10 @@
 {
   "name": "oget",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "oget.js",
-  "module": "src/oget.js",
-  "jsnext:main": "src/oget.es.js",
+  "module": "oget.es.js",
+  "jsnext:main": "oget.es.js",
   "scripts": {
     "pretest": "rollup -c -f cjs",
     "test": "mocha ./test.js",
