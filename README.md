@@ -15,12 +15,12 @@ This will never be some kind of "wannabe" lodash killer library. It's just what 
 let oget = require('oget');
 
 let obj = {
-    uno: 1
-    , due: {
-        a: ['abracadabra']
-        , b: [ [ [ 'horray' ] ] ]
-    }
-    , tre: 3
+  uno: 1,
+  due: {
+    a: ['abracadabra'],
+    b: [ [ [ 'horray' ] ] ]
+  },
+  tre: 3
 };
 
 oget(obj, 'due.a.0'); // abracadabra
@@ -34,14 +34,9 @@ oget(obj, 'due[b].0[0].0'); // horray
 oget(obj, 'due.b.0.0[0].missing', 'default_value!'); // default_value!
 ```
 
-#### Install (NPM)
+#### Install
 ```bash
 $ npm install --save oget
-```
-
-#### Install (Bower)
-```bash
-$ bower install --save oget
 ```
 
 #### Test

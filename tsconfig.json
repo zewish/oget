@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["ES5"],
+    "target": "ES5",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}

@@ -1,16 +1,13 @@
-var oget = function (obj, path, def) {
+var oget = function (obj, path, defaultValue) {
     var res = path
-    .replace(/\[/g, '.')
-    .replace(/\]/g, '')
-    .replace(/^\./, '')
-    .split('.')
-    .reduce(function (prev, curr) {
-        return prev && prev[curr]
-    }, obj);
-
+        .replace(/\[/g, '.')
+        .replace(/\]/g, '')
+        .replace(/^\./, '')
+        .split('.')
+        .reduce(function (prev, curr) { return (prev && prev[curr]); }, obj);
     return (res === undefined)
-      ? def
-      : res;
+        ? defaultValue
+        : res;
 };
 
 export default oget;
