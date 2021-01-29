@@ -1,2 +1,5 @@
 node_modules
 benchmark/package-lock.json
+oget.js
+oget.*.js
+oget.d.ts

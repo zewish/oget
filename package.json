@@ -1,6 +1,6 @@
 {
   "name": "oget",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "oget.js",
   "module": "oget.es.js",
@@ -8,7 +8,7 @@
   "typings": "oget.d.ts",
   "scripts": {
     "test": "mocha -r ts-node/register ./src/test.ts",
-    "prepublish": "rollup -f cjs -o oget.js -c ./rollup.config.ts && rollup -f umd -o oget.umd.js -c ./rollup.config.ts && rollup -f es -o oget.es.js -c ./rollup.config.ts"
+    "prepare": "rollup -f cjs -o oget.js -c ./rollup.config.ts && rollup -f umd -o oget.umd.js -c ./rollup.config.ts && rollup -f es -o oget.es.js -c ./rollup.config.ts"
   },
   "repository": {
     "type": "git",
