@@ -1,5 +1,5 @@
-const microtime = require('microtime');
-const _get = require('lodash.get');
+import microtime from 'microtime';
+import oget from 'oget';
 
 let obj = {
   uno: 1,
@@ -83,7 +83,7 @@ let selectors = [
 let start = microtime.now();
 
 for (let j = 0; j < selectors.length; j++) {
-  console.log(`${selectors[j]} ->`, _get(obj, selectors[j]));
+  console.log(`${selectors[j]} ->`, oget(obj, selectors[j]));
 }
 
 console.log(microtime.now() - start);

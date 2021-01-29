@@ -1,5 +1,6 @@
 node_modules
 benchmark/package-lock.json
+benchmark/build
 oget.js
 oget.*.js
 oget.d.ts

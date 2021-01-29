@@ -1,34 +1,35 @@
-#!/usr/bin/env node
-
-const { execSync } = require('child_process');
-const path = require('path');
+import { execSync } from 'child_process';
+import path from 'path';
 
 process.chdir(
   path.resolve(__dirname)
 );
 
+interface Times {
+  oget: number[];
+  _get: number[];
+}
 
-let times = {
+const times: Times = {
   oget: [],
   _get: []
 };
 
-let bench = (lib) => {
+const bench = (lib: keyof Times) => {
   for (let i = 1; i <= 1000; i++) {
     console.log(`[${lib}] ${i}...`);
 
-    let res = String(
+    const res = String(
       execSync(`node ./${lib}.js`)
-    )
-    .split('\n');
+    ).split('\n');
 
     times[lib].push(
-      parseInt(res[res.length - 2])
+      parseInt(res[res.length - 2], 10)
     );
   }
 }
 
-let print = (lib) => console.log(
+const print = (lib: keyof Times) => console.log(
   `[${lib}] average time:`,
   times[lib].reduce((a, b) => a + b, 0) / times[lib].length
 );
