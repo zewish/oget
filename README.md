@@ -10,11 +10,9 @@ This will never be some kind of "wannabe" lodash killer library. It's just what 
 
 #### Usage
 ```javascript
-'use strict';
+import oget from 'oget';
 
-let oget = require('oget');
-
-let obj = {
+const obj = {
   uno: 1,
   due: {
     a: ['abracadabra'],

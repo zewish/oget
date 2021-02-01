@@ -1,6 +1,6 @@
 {
   "name": "oget",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "fast { property: 'getter' }",
   "sideEffects": false,
   "main": "oget.js",
