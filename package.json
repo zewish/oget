@@ -1,21 +1,22 @@
 {
   "name": "oget",
-  "version": "1.1.3",
-  "description": "",
+  "version": "1.1.4",
+  "description": "fast { property: 'getter' }",
+  "sideEffects": false,
   "main": "oget.js",
   "module": "oget.es.js",
   "jsnext:main": "oget.es.js",
   "typings": "oget.d.ts",
-  "scripts": {
-    "test": "mocha -r ts-node/register ./src/test.ts",
-    "prepare": "rollup -f cjs -o oget.js -c ./rollup.config.ts && rollup -f umd -o oget.umd.js -c ./rollup.config.ts && rollup -f es -o oget.es.js -c ./rollup.config.ts"
-  },
   "files": [
     "oget.es.js",
     "oget.js",
     "oget.umd.js",
     "oget.d.ts"
   ],
+  "scripts": {
+    "test": "mocha -r ts-node/register ./src/test.ts",
+    "prepare": "rollup -f cjs -o oget.js -c ./rollup.config.ts && rollup -f umd -o oget.umd.js -c ./rollup.config.ts && rollup -f es -o oget.es.js -c ./rollup.config.ts"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zewish/oget.git"
